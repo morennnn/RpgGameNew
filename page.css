@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    font-family: "Handjet", sans-serif;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url('Handjet/Handjet-VariableFont_ELGR_ELSH_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Handjet';
+    src: url('Handjet/static/Handjet-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+    color: beige;
+    display: grid; 
+    place-items: center; 
+    min-height: 100vh;
+}
+
+.light {
+    top: 30px;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+}
+
+#light {
+    border-radius: 99px;
+    border: 2px solid #9803e248;
+    color: #9b03e2;
+    box-shadow: 0 0 10px #a303e2bc; 
+}
+
+.content {
+    max-width: 460px;
+    width: 100%;
+    max-height: 560px;
+    height: 100%;
+    border: 1px solid #ae03e29d; 
+    box-shadow: 0 0 30px #ae03e2;    
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.title  {
+    color:  #ae03e29d;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+      text-shadow:  0 0 7px  #ae03e29d, 0 0 8px  #ae03e29d;
+    }to {
+        text-shadow: 0 0 10px  #ae03e29d, 0 0 30px  #ae03e29d;
+      }
+    
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#characters {
+    border: 1px solid  #ae03e26d;
+    border-radius: 3px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0f0f0f;
+    max-width: 250px;
+    width: 100%;
+}
+
+#characters span {
+    color: #6f03e2;
+}
+
+#characters div {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.wrapper-effect{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 16px;
+    background-color: #00000000;
+    color: beige;
+    border-radius: 2px;
+    border: 0.5px solid #ae03e248;
+    padding: 10px;
+    cursor: pointer;   
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:hover {
+	color: #2b5b73;
+	box-shadow:  0 0 0 1px #3a79994b;
+}
+
+#use {
+    border: 0.5px solid #19e20348;
+    color: #19e203;
+    box-shadow: 0 0 5px #19e20373;    
+}
+
+#use:hover{
+    color: #19e20389;  
+}
+
+#defend {
+    border: 0.5px solid #e2980348;
+    color: #e29003;
+    box-shadow: 0 0 5px #e2940373;    
+}
+
+#defend:hover {
+    color: #e2900364;  
+}
+
+#attack {
+    border: 0.5px solid #e2030348;
+    color: #e20303;
+    box-shadow: 0 0 5px #e2030373;    
+}
+
+#attack:hover {
+    color: #e20303b3;
+}
+
+#reset {
+    border: 0.5px solid #ffffff48;
+    color: #ffffff;
+    box-shadow: 0 0 5px #ffffff73;    
+}
+
+#reset:hover {
+    color: #ffffff91;
+}
+
+#location {
+    background-color: #0f0f0f;
+    flex-direction: column;
+    border: 1px solid #ae03e26d;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+h2 {
+    display: flex;
+    gap: 10px;
+}
+
+#current-location{
+    color: #6f03e2;
+}
+.wrapper-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action {
+    border: 0.5px solid #5c03e248;
+    color: #6f03e2;
+    box-shadow: 0 0 5px #6003e273;    
+}
+
+#combat {
+    max-height: 150px;
+    overflow-y: auto; 
+    padding: 10px; 
+    background-color: #0f0f0f;
+    flex-direction: column;
+    border: 1px solid  #ae03e26d;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#combat::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f9f9fd00;
+  }
+  
+#combat::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ae03e23a;
+}
+  
+#combat::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd00;
+}
+

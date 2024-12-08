@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="page.css">
+    
+</head>
+<body>
+    <div class="light"><img id="light" src="moon.png" alt="сменить тему" "></button></div>
+    <p id="reloadMessage" style="display: none;">Перезагрузка...</p>
+    <div class="content" id="content" >
+        <h1 class="title">Текстовая RPG Игра</h1>
+        <div class="container">
+            <div id="characters">
+                <div>Имя:<span id="name">Человек</span></div>
+                <div>Здоровье:<span id="health">100</span></div>
+                <div>Сила:<span id="power">10</span></div>
+                <div>Защита:<span id="protection">5</span></div>
+                <div>Уровень:<span id="level">1</span></div>
+                <div>Инвентарь:<span id="inventory">Зелье здоровья x2</span></div>
+            </div>
+            <div class="wrapper-effect">
+                <button id="attack">Атаковать</button>
+                <button id="defend">Защищаться</button>
+                <button id="use">Использовать предмет</button>
+                <button id="reset" >Сбросить прогресс</button>
+            </div>
+        </div>
+        <div class="container" id="location">
+            <h2>Текущая локация:<span id="current-location">Деревня</span> </h2>
+            <div class="wrapper-actions">
+                <button class="action" id="go-forest" >Идти в лес</button>
+                <button class="action" id="go-dungeon" >Идти в подземелье</button>
+                <button class="action" id="go-village" >Остаться в деревне</button>
+                <button class="action" id="return-village" >Вернуться в деревню</button>
+            </div>
+        </div>
+        <div class="container" id="combat">
+            <div id="combat-log">
+                Вы готовы начать путешествие...
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
