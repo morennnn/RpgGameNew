@@ -151,9 +151,9 @@ button:hover {
 }
 
 #attack {
-    border: 0.5px solid #e2030348;
-    color: #e20303;
-    box-shadow: 0 0 5px #e2030373;    
+    border: 0.5px solid #ff0c0c48;
+    color: #d50e0e;
+    box-shadow: 0 0 5px #d30000af;    
 }
 
 #attack:hover {
