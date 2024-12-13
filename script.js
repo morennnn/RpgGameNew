@@ -31,7 +31,7 @@ themeSwitcher.addEventListener('click', () => {
 
     const currentTheme = isMoon ? themeColors.moon : themeColors.sun;
 
-    light.src = isMoon ? 'sun.png' : 'moon.png';
+    light.src = isMoon ? 'img/sun.png' : 'img/moon.png';
     body.style.backgroundColor = currentTheme.background;
     characters.style.backgroundColor = currentTheme.characterBg;
     body.style.color = currentTheme.color;
